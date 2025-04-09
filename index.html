@@ -3,20 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Library Management System</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>My Awesome Library</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Library Management System</h1>
-    <div id="library"></div>
-    
-    <h2>Add a New Book</h2>
-    <form id="bookForm">
-        <input type="text" id="title" placeholder="Title" required>
-        <input type="text" id="author" placeholder="Author" required>
-        <input type="number" id="year" placeholder="Year" required>
-        <button type="submit">Add Book</button>
-    </form>
+    <header>
+        <h1>My Digital Library</h1>
+    </header>
+
+    <main>
+        <section id="shelf">
+            <h2>Available Books</h2>
+            <ul id="book-list">
+                </ul>
+        </section>
+
+        <section id="borrow-return">
+            <h2>Borrow/Return Books</h2>
+            <div class="form-group">
+                <label for="book-id">Book ID:</label>
+                <input type="text" id="book-id" placeholder="Enter Book ID">
+            </div>
+            <div class="form-group">
+                <button id="borrow-btn">Borrow Book</button>
+                <button id="return-btn">Return Book</button>
+            </div>
+            <div id="borrow-return-message" class="message"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 My Awesome Library</p>
+    </footer>
 
     <script src="script.js"></script>
 </body>
